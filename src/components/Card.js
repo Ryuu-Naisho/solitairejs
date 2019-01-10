@@ -21,20 +21,20 @@ class Card{
     /**
     * Create a Card object 
     * @constructor
-    * @param {int} id - id of the card.
-    * @param {int} rank - rank of the card.
+    * @param {number} id - id of the card.
+    * @param {number} rank - rank of the card.
     * @param {string} suite - suite of the card.
     */
     constructor (id, rank, suite){
         if (!id || !rank || !suite || typeof(id) != 'number' || typeof(rank) != 'number' || typeof(suite) != 'string')
                 throw new InvalidArgumentException('params(int,int,string)');
-        const _id = id;
-        const _rank = rank;
-        const _suite = suite;
+        const _ID = id;
+        const _RNK = rank;
+        const _SUITE = suite;
         
-        this.getID = function(){return _id;}
-        this.getRank = function(){return _rank;}
-        this.getSuite = function(){return _suite;}
+        this.getID = function(){return _ID;}
+        this.getRank = function(){return _RNK;}
+        this.getSuite = function(){return _SUITE;}
     }
     /**
     * Get the card id
